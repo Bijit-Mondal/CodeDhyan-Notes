@@ -1,6 +1,5 @@
 <template>
   <div id="global-layout">
-    <NavBar/>
     <component :is="layout" />
     <Footer />
   </div>
