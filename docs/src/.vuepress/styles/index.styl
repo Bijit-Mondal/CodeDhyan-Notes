@@ -4,20 +4,37 @@
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
 
-.home .hero img
-  max-width 450px!important
-
-@font-face
-  font-family 'Outfit'
-  src url('/ttf/Outfit-Regular.woff2') format('woff2')
-
-@font-face
-  font-family 'Outfit-Bold'
-  src url('/ttf/Outfit-SemiBold.woff2') format('woff2')
-
-@font-face
-  font-family 'Jetbrains'
-  src url('/ttf/JetBrainsMono-Regular.woff2') format('woff2')
+html
+  background-color: $backgroundColor
+  body
+    background-color: $backgroundColor
+    .home
+      padding: 8rem 0 0
+      .hero
+        margin-left: 2rem
+        margin-right: 2rem
+        border: 0.125rem solid $darkBorderColor
+        box-shadow: 0 0.5rem 1rem 0 $darkBorderColor
+        transition: box-shadow 0.2s
+        border-radius: 5.625rem
+        margin-bottom: 0.625rem
+        background-image: radial-gradient(circle at center center, #3B2D3A, $backgroundColor)
+        padding: 2rem
+        img
+          transition: transform 0.2s
+      .hero:hover
+        box-shadow: 0.125rem 0.5rem 1rem 0.125rem #0b0c0f
+        img
+          transform: scale(1.1)
+      .features
+        margin-left: 2rem
+        margin-right: 2rem
+        border-top: 0.125rem solid $borderColor
+        border-bottom: 0.125rem solid $borderColor
+        .feature
+          text-align: center
+          h2
+            font-size: 1.4rem
 
 code
   font-family Jetbrains

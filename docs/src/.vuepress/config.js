@@ -10,6 +10,7 @@ module.exports = {
    */
   description: "Dhyan Together, Code Better ",
 
+
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
@@ -75,5 +76,6 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
     'mermaidjs',
+    '@goy/svg-icons',
   ]
 }
