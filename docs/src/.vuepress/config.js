@@ -43,9 +43,9 @@ module.exports = {
           {
             text: 'By Topic',
             items: [
-              { text: 'LeetCode', link: '/notes/LeetCode/' },
-              { text: 'Node.js', link: '/notes/Node.js/' },
-              { text: 'VuePress', link: '/notes/VuePress/' },
+              { text: 'DSA', link: '/notes/DSA/' },
+              { text: 'Development', link: '/notes/Development/' },
+              { text: 'CP', link: '/notes/CP/' },
             ],
           },
         ],
@@ -77,5 +77,6 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     'mermaidjs',
     '@goy/svg-icons',
+    '@vuepress/blog',
   ]
 }
