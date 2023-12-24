@@ -1,11 +1,11 @@
 {
   "name": "CodeDhyan-Notes",
   "version": "0.0.1",
-  "description": "",
+  "description": "Notes website for CodeDhyan",
   "main": "index.js",
   "authors": {
-    "name": "",
-    "email": ""
+    "name": "Bijit-Mondal",
+    "email": "bijitmondal3011@rediffmail.com"
   },
   "repository": "/CodeDhyan-Notes",
   "scripts": {
