@@ -4,11 +4,11 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'CodeDhyan Coding Club',
+  title: 'CodeDhyan Notes',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
+  description: "Dhyan Together, Code Better ",
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -17,6 +17,7 @@ module.exports = {
    */
   head: [
     ['meta', { name: 'theme-color', content: '#8b70cd' }],
+    ['meta', { name: 'author', content: 'Bijit Mondal' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -27,29 +28,36 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: 'https://github.com/Bijit-Mondal/CodeDhyan-Notes',
+    logo: 'https://v1.vuepress.vuejs.org/hero.png',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: true,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Notes',
+        items: [
+          { text: 'All Notes', link: '/notes/' },
+          {
+            text: 'By Topic',
+            items: [
+              { text: 'LeetCode', link: '/notes/LeetCode/' },
+              { text: 'Node.js', link: '/notes/Node.js/' },
+              { text: 'VuePress', link: '/notes/VuePress/' },
+            ],
+          },
+        ],
       },
       {
         text: 'Config',
         link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
       }
     ],
     sidebar: {
-      '/guide/': [
+      '/notes/': [
         {
-          title: 'Guide',
+          title: 'Notes',
           collapsable: false,
           children: [
             '',
