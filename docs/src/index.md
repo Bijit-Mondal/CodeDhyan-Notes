@@ -4,7 +4,7 @@ footer: false
 heroImage: "https://v1.vuepress.vuejs.org/hero.png"
 tagline: ""
 actionText: Dive In →
-actionLink: /notes/
+actionLink: /topics/
 features: 
   - title: Explore
   - title: Learn

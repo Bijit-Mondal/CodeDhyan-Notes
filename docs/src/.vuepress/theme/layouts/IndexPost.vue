@@ -25,11 +25,12 @@
           </div>
           <div class="post-pic">
             <img
-              src="https://codemonkeys.tech/images/leetcode/topic/leetcode-topic-logo.png"
+              :src="require(`../../public/images/${post.frontmatter.img}`)"
               alt="Post Pic"
             />
           </div>
         </div>
+        
         <div id="pagination">
           <div>
             <router-link v-if="$pagination.hasPrev" :to="$pagination.prevLink"

@@ -77,7 +77,7 @@ module.exports = {
             layout: 'IndexPost',
             itemPermalink: '/:slug',
             pagination: {
-              lengthPerPage: 2, // default value
+              lengthPerPage: 5, // default value
               layout: 'IndexPost', // layout for the index page when page != 1
               prevText: 'Prev',
               nextText: 'Next',
@@ -97,10 +97,6 @@ module.exports = {
             frontmatter: {
               canonicalUrl: 'topics/',
               topicDetails: topicDetails.topicsPageDetails
-            },
-            pagination: {
-              lengthPerPage: 5,
-              layout: 'IndexPost'
             },
             // Layout of the `scope page` (list of posts with this tag)
             scopeLayout: 'IndexPost',
