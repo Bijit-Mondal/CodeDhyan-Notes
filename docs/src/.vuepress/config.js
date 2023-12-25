@@ -15,6 +15,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
+    ['link', { rel: 'icon', href:'/images/logo.png' }],
     ['meta', { name: 'theme-color', content: '#8b70cd' }],
     ['meta', { name: 'author', content: 'Bijit Mondal' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -33,7 +34,6 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: true,
-    displayAllHeaders: true,
     nav: [
       {
         text: 'Topics',
@@ -76,7 +76,7 @@ module.exports = {
             dirname: 'notes',
             path: '/notes/',
             layout: 'IndexPost',
-            itemPermalink: '/:slug',
+            itemPermalink: 'notes/:slug',
             pagination: {
               lengthPerPage: 5, // default value
               layout: 'IndexPost', // layout for the index page when page != 1
