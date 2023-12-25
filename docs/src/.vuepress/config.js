@@ -33,6 +33,7 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: true,
+    displayAllHeaders: true,
     nav: [
       {
         text: 'Topics',
@@ -45,8 +46,8 @@ module.exports = {
           {
             text: 'By Topic',
             items: [
-              { text: 'DSA', link: '/topics/DSA/' },
-              { text: 'Development', link: '/topics/Developement/' }
+              { text: 'C', link: '/topics/C/' },
+              { text: 'Java', link: '/topics/Java/' }
             ]
           }
         ]
