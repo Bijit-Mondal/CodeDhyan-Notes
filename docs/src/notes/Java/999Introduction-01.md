@@ -11,7 +11,7 @@ sidebar: true
 
 # What is Java?
 
-> Imagine Java as a versatile toolbox. Inside this toolbox, you have different tools (Java) that you can use to create amazing artwork (applications). Each tool has its unique purpose and function, just like brushes, colors, and techniques in painting. You use these tools to craft intricate and beautiful paintings (Java applications) by following a set of instructions (writing code) that bring your artistic vision to life on a canvas (computer screen).
+> Imagine Java as a versatile toolbox. Inside this toolbox, you have different tools (Java libraries) that you can use to create amazing artwork (applications). Each tool has its unique purpose and function, just like brushes, colors, and techniques in painting. You use these tools to craft intricate and beautiful paintings (Java applications) by following a set of instructions (writing code) that bring your artistic vision to life on a canvas (computer screen).
 
 ## Audience
 This tutorial is for everyone, whether you're just starting or already know a lot. Join in to learn new things or refresh what you already know about Java.

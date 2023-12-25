@@ -18,6 +18,7 @@ Java was created with a focus on portability and security. Alongside these core 
 3. **Robustness** - Emphasizes compile-time and runtime error checking, enhancing memory management and exception handling.
 
 4. **Platform Independence** - Programs compile into bytecode, enabling them to run on any machine with the Java Runtime Environment, ensuring write-once, run-anywhere capability.
+
 ```mermaid
 flowchart LR
 1([Java Program]) --> 2([ByteCode])
