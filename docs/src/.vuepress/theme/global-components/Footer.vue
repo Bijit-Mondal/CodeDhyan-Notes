@@ -66,7 +66,7 @@
         </a>
       </div>
     </div>
-    <p class="made-by">Made with passion by <a href="https://github.com/Bijit-Mondal">Bijit Mondal</a></p>
+    <p class="made-by">Made with passion by <a href="https://github.com/Bijit-Mondal">Bijit Mondal</a>. Theme by <a href="#">codemonkeysio</a></p>
   </footer>
 </template>
 

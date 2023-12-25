@@ -1,4 +1,4 @@
-const { description } = require('../../package')
+const topicDetails = require('../data/topics-page-details')
 
 module.exports = {
   lang: 'en-US',
@@ -35,36 +35,27 @@ module.exports = {
     lastUpdated: true,
     nav: [
       {
+        text: 'Topics',
+        link: '/topics/'
+      },
+      {
         text: 'Notes',
         items: [
           { text: 'All Notes', link: '/notes/' },
           {
             text: 'By Topic',
             items: [
-              { text: 'DSA', link: '/notes/DSA/' },
-              { text: 'Development', link: '/notes/Development/' },
-              { text: 'CP', link: '/notes/CP/' },
-            ],
-          },
-        ],
+              { text: 'DSA', link: '/topics/DSA/' },
+              { text: 'Development', link: '/topics/Developement/' }
+            ]
+          }
+        ]
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Resources',
+        link: '/resources/'
       }
-    ],
-    sidebar: {
-      '/notes/': [
-        {
-          title: 'Notes',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    ]
   },
 
   /**
@@ -84,16 +75,44 @@ module.exports = {
             dirname: 'notes',
             path: '/notes/',
             layout: 'IndexPost',
-            itemLayout: 'Post',
             itemPermalink: '/:slug',
             pagination: {
-              lengthPerPage: 2,
-              layout: 'IndexPost',
+              lengthPerPage: 2, // default value
+              layout: 'IndexPost', // layout for the index page when page != 1
               prevText: 'Prev',
               nextText: 'Next',
             }
-          },
+          }
         ],
+        frontmatters: [
+          {
+            // Unique ID of current classification
+            id: 'topics',
+            // Decide that the frontmatter keys will be grouped under this classification
+            keys: ['topic'],
+            // Path of the `entry page` (or `list page`)
+            path: '/topics/',
+            // Layout of the `entry page` (list of tags)
+            layout: 'Topics',
+            frontmatter: {
+              canonicalUrl: 'topics/',
+              topicDetails: topicDetails.topicsPageDetails
+            },
+            pagination: {
+              lengthPerPage: 5,
+              layout: 'IndexPost'
+            },
+            // Layout of the `scope page` (list of posts with this tag)
+            scopeLayout: 'IndexPost',
+            pagination: {
+              lengthPerPage: 5,
+              layout: 'IndexPost'
+            }
+          }
+        ],
+        sitemap: {
+          hostname: 'https://notes.codedhyan.cc'
+        }
       },
     ],
   ]

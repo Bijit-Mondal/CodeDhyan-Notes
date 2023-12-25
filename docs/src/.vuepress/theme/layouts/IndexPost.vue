@@ -1,60 +1,91 @@
 <template>
-  <div class="theme-default-content">
-    <h1>Dhyan Together. Code Better</h1>
-    <div v-for="post in $pagination.pages" :key="post.key" @click="
-      $router.push(`${post.path}`).catch((err) => {
-        if (
-          err.name !== 'NavigationDuplicated' &&
-          !err.message.includes(
-            'Avoided redundant navigation to current location'
-          )
-        ) {
-          console.log(err);
-        }
-      })
-      ">
-      <div>
-        <div>
-          <h2>
-            {{ post.title }}
-          </h2>
+  <Layout>
+    <template #page-top>
+      <div class="theme-default-content content__default">
+        <h1 v-if="!$route.path.includes('/posts/')">
+          {{ $pagination.pages[0].frontmatter.topicDescription }}
+        </h1>
+        <h1 v-else>
+          Dhyan Together, Code Better
+        </h1>
+        <div
+          class="post-card"
+          :key="post.key"
+          v-for="post in $pagination.pages"
+        >
+          <div class="post-title-and-summary">
+            <h2>
+              <router-link :to="post.path">
+                {{ post.title }}
+              </router-link>
+            </h2>
+            <p>
+              {{ post.frontmatter.preview }}
+            </p>
+          </div>
+          <div class="post-pic">
+            <img
+              src="https://codemonkeys.tech/images/leetcode/topic/leetcode-topic-logo.png"
+              alt="Post Pic"
+            />
+          </div>
         </div>
-        <p>
-          {{ post.frontmatter.preview }}
-        </p>
+        <div id="pagination">
+          <div>
+            <router-link v-if="$pagination.hasPrev" :to="$pagination.prevLink"
+              >Prev</router-link
+            >
+          </div>
+          <div>
+            <router-link v-if="$pagination.hasNext" :to="$pagination.nextLink"
+              >Next</router-link
+            >
+          </div>
+        </div>
       </div>
-      <div>
-        <img :src="`/images/${post.frontmatter.img}`" :alt="post.frontmatter.alt || 'Post Picture'" />
-      </div>
-    </div>
-    <div class="pagination">
-      <div>
-        <router-link v-if="$pagination.hasPrev" :to="$pagination.prevLink">
-          <vp-icon name="leftArrow" class="left-arrow"></vp-icon>Prev
-        </router-link>
-      </div>
-      <div>
-        <router-link v-if="$pagination.hasNext" :to="$pagination.nextLink">
-          Next<vp-icon name="rightArrow" class="right-arrow"></vp-icon>
-        </router-link>
-      </div>
-    </div>
-  </div>
+    </template>
+  </Layout>
+  <!-- <Layout>
+    
+  </Layout> -->
 </template>
-  
+
 <script>
+import Layout from '@parent-theme/layouts/Layout.vue';
+
 export default {
-  name: 'IndexPost',
-}
+  components: {
+    Layout
+  }
+};
 </script>
-  
+
 <style lang="stylus" scoped>
-  .pagination
-    display: flex
-    justify-content: space-between
-    padding-top: 2rem
-    .left-arrow
-      padding-right: 0.25rem
-    .right-arrow
-      padding-left: 0.25rem
-  </style>
+h2
+  margin 1.875rem 0
+
+.post-card
+  display flex
+  align-items center
+  margin-top 3.5rem
+  padding 0 2rem
+  border 0.125rem solid #1B151C
+  border-radius 1.875rem
+  box-shadow 0 0.5rem 1rem 0 #1B151C
+  transition 0.2s
+  background-image radial-gradient(circle at center center, #342134, $backgroundColor)
+  .post-title-and-summary
+    flex 8.5
+  .post-pic
+    flex 1.5
+    padding-top 1.125rem
+    padding-left 1.125rem
+    padding-bottom 1.125rem
+.post-card:hover
+  box-shadow 0.125rem 0.5rem 1rem 0.125rem #0b0c0f
+
+#pagination
+  display flex
+  justify-content space-between
+  padding-top 2.719rem
+</style>

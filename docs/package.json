@@ -18,5 +18,8 @@
     "@vuepress/plugin-blog": "^1.9.4",
     "vuepress": "^1.5.3",
     "vuepress-plugin-mermaidjs": "^1.8.1"
+  },
+  "dependencies": {
+    "rfs": "^10.0.0"
   }
 }
