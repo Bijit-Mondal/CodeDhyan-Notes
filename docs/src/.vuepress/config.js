@@ -1,9 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
+  lang: 'en-US',
   title: 'CodeDhyan Notes',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
@@ -20,10 +18,10 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#8b70cd' }],
     ['meta', { name: 'author', content: 'Bijit Mondal' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
   ],
 
-  /**
+  /**`
    * Theme configuration, here is the default theme configuration for VuePress.
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
@@ -77,6 +75,26 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     'mermaidjs',
     '@goy/svg-icons',
-    '@vuepress/blog',
+    [
+      '@vuepress/blog',
+      {
+        directories: [
+          {
+            id: 'notes',
+            dirname: 'notes',
+            path: '/notes/',
+            layout: 'IndexPost',
+            itemLayout: 'Post',
+            itemPermalink: '/:slug',
+            pagination: {
+              lengthPerPage: 2,
+              layout: 'IndexPost',
+              prevText: 'Prev',
+              nextText: 'Next',
+            }
+          },
+        ],
+      },
+    ],
   ]
 }
