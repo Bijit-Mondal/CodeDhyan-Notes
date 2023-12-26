@@ -10,7 +10,7 @@ sidebar: true
 ---
 
 # JVM (Java Virtual Machine)
-JVM stands for Java Virtual Machine. When a Java program is executes, JVM is responsible for converting the byte code to the machine-specific code. JVM is also **platform-independent** and provides core java functions such as memory management, garbage collection, security, etc. JVM is customizable and we can use java options to customize it. JVM is called **virtual** because it provides an interface that **does not** depend on the underlying operating system and machine hardware. This independence from hardware and the operating system makes java program write-once-run-anywhere.
+JVM (Java Virtual Machine) converts Java bytecode to machine-specific code when executing a Java program. It's **platform-independent**, handling core functions like *memory management*, *garbage collection*, and *security*. Customizable via Java options, JVM's virtual interface **isn't** tied to specific hardware or OS, enabling the `write once, run anywhere` `WORA` capability for Java programs.
 
 ```mermaid
 flowchart LR
@@ -31,7 +31,8 @@ flowchart LR
 ```
 
 # JDK (Java Development Kit)
-Java Development Kit (JDK) is the core component of Java Environment and provides all the tools, executables, and binaries required to compile, debug, and execute a Java Program. JDK is a **platform-specific** software and that’s why we have separate installers for Windows, Mac, and Unix systems. We can say that JDK is the superset of JRE since it contains JRE with Java compiler, debugger, and core classes.
+JDK (Java Development Kit) is essential for Java programming, offering tools for compiling, debugging, and running Java programs. It's **platform-specific**, with separate installers for Windows, Mac, and Unix. JDK encompasses JRE (Java Runtime Environment), including a Java compiler, debugger, and core classes. It acts as a superset of JRE, providing additional functionalities for Java development.
+
 
 ```mermaid
 flowchart LR
@@ -48,14 +49,11 @@ flowchart LR
 
 ### Difference between JDK, JRE
 
-| Feature                  | JDK (Java Development Kit)                        | JRE (Java Runtime Environment)                       |
-|--------------------------|---------------------------------------------------|------------------------------------------------------|
-| **Contains**             | Development tools, libraries, and executables     | Only runtime environment with libraries and JVM       |
-| **Purpose**              | For Java development and compiling applications   | For executing Java applications without development  |
-| **Components**           | Compiler, debugger, Javadoc, etc.                 | Java libraries, Java Virtual Machine (JVM), and APIs |
-| **Usage**                | Used for Java application development              | Used to run Java applications                         |
-| **Includes JRE**         | Yes, JDK includes JRE                             | Standalone package                                    |
-| **Can Compile Code**     | Yes                                               | No                                                     |
-| **Size**                 | Larger in size due to development tools           | Smaller compared to JDK                               |
-| **Required for Development** | Yes                                           | No (if only running Java applications)                |
-| **Platform Independence**| Same for all platforms (platform-independent)     | Same for all platforms (platform-independent)         |
+| JDK (Java Development Kit)                        | JRE (Java Runtime Environment)                       |
+|-------------------------------------------------- |------------------------------------------------------|
+|It is a software development kit that helps in the development of applications in Java. Along with JRE, the JDK includes other various development tools.                                       | It is a software package that provides Java class libraries with JVM. Moreover, it includes other components for running Java applications.     |
+|For Java development and compiling applications   | For executing Java applications without development  |
+|Compiler, debugger, Javadoc, etc.                 | Java libraries, Java Virtual Machine (JVM), and APIs |
+|JDK is the superset of JRE.                        | JRE is the subset of JDK.                        |
+|JDK is platform-dependent. For each OS platform (Linux, Windows, Mac, etc.) users are required to install a different JDK.                           | JRE is also platform-dependent, like JDK.                                    |
+
