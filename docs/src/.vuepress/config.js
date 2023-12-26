@@ -66,6 +66,13 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
     'mermaidjs',
+    'vuepress-plugin-mathjax',
+    {
+      target: 'chtml',
+      macros: {
+        '*': '\\times',
+      },
+    },
     '@goy/svg-icons',
     [
       '@vuepress/blog',

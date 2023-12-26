@@ -18,6 +18,18 @@ Data Type - `int`\
 Variable Name - `num`\
 Value - `10`
 
+**Example** - 
+```java
+public class Variables{
+    public static void main(String[]args){
+        int n = 10;
+        System.out.println(n);
+    }
+}
+```
+**Output** - \
+`10`
+
 ## Types of Variable
 There are three types of variable present in java
 - Local Variable

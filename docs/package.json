@@ -17,6 +17,7 @@
     "@goy/vuepress-plugin-svg-icons": "4.2.3",
     "@vuepress/plugin-blog": "^1.9.4",
     "vuepress": "^1.5.3",
+    "vuepress-plugin-mathjax": "^1.2.8",
     "vuepress-plugin-mermaidjs": "^1.8.1"
   },
   "dependencies": {
