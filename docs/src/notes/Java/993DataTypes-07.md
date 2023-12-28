@@ -68,11 +68,11 @@ graph TD
     - Stores either true or false.
     - Used to track conditions as true or false
 
-    **Syntax** -
+    *Syntax*
     ```java
     boolean isConcentrated = false;
     ```
-    **Example** - 
+    *Example* 
     ```java
     public class BooleanExample{
         public static void main(String[]args){
@@ -88,7 +88,7 @@ graph TD
     ```
     Think of "if-else" as a two-way street. If something happens, one path is taken. If it doesn't, another path is chosen. We'll explain it more in later articles, but just know they both lead to the right answer. Here if `isConcentrated` is true then `System.out.println("You are reading the documentation very carefully"); ` statement will execute and will give the output and if it is false then `System.out.println("You aren't concentrated");` this block will execute and will give the output.
 
-    **Output** -
+    *Output* 
     ```
     You are reading the documentation very carefully
     ```
@@ -97,11 +97,11 @@ graph TD
     - Value range: -128 to 127.
     - Helps save memory, 4 times smaller than integer type.
 
-    **Syntax** -
+    *Syntax*
     ```java
     byte num = 127;
     ```
-    **Example** - 
+    *Example* 
     ```java
     public class BooleanExample{
         public static void main(String[]args){
@@ -120,9 +120,93 @@ graph TD
 
     So, when num reaches 127 and is incremented (num++), it becomes -128 due to the overflow. Subsequent increments continue the cycle, so the next value is -127.
 
-    **Output** -
+    *Output* 
     ```
     127
     -128
     -127
     ``` 
+2. **Char Data Type** - 
+    - The char data type is a single 16-bit Unicode character.
+    - Range: 0 to 65,535.
+    - Stores character data in Unicode format.
+
+    *Syntax*
+    ```java
+    char ch = 'C';
+    ```
+    *Example*
+    ```java
+    public class Char{
+        public static void main(String[]args){
+            char ch = 'C';
+            System.out.println(ch);
+            System.out.println(++ch);
+        }
+    }
+    ```
+    In the provided Java code snippet, a variable named `ch` is declared with a data type of `char` and assigned the value `'C'`. `System.out.println(ch)` prints the initial value of ch, which is 'C', to the console. `System.out.println(++ch)` pre-increments the value of `ch` to the next *Unicode character*, resulting in `'D'`, and prints it to the console.
+
+    *Output*
+    ```
+    C
+    D
+    ```
+3. **Short Data Type** - 
+    - 16-bit Integer
+    - Value range -32,768 to 32767
+    - Helps save memory, 2 times smaller than integer type.
+    
+    *Syntax*
+    ```java
+    short num = 32767;
+    ```
+
+    Similar like `Byte` it has cycle-like behavior where the value wraps around from the maximum value to the minimum value of the data type.
+
+4. **Int Data Type** - 
+    - 32-bit Integer
+    - Value range: -2,147,483,648 to 2,147,483,647.
+
+    *Syntax* 
+
+    ```java
+    int num = 2147483647;
+    ```
+    Similar like `Byte` and `Short` it has cycle-like behavior where the value wraps around from the maximum value to the minimum value of the data type.
+
+
+4. **Long Data Type** - 
+    - 64-bit Integer
+    - Value range: - 9,223,372,036,854,775,808 $(-2^{63})$ to 9,223,372,036,854,775,807 $(2^{63} - 1)$.
+    - The long data type is specifically used when the user needs a much bigger value range than an integer. 
+
+    *Syntax* 
+
+    ```java
+    long num = 19093;
+    ```
+    
+5. **Float Data Type** - 
+    - The float data type is a single-precision 32-bit floating-point.
+    - Use a float (instead of double) to save memory.
+    - Store Upto 7 Decimal Digits.
+
+    *Syntax*
+
+    ```java
+    float val = 1.23;
+    ```
+
+6. **Double Data Type** - 
+    - The double data type is a double-precision 64-bit floating-point.
+    - Store Upto 16 Decimal Digits.
+    >Note: Both float and double data types were designed especially for scientific calculations, where approximation errors are acceptable. If accuracy is the most prior concern then, it is recommended not to use these data types and use BigDecimal class instead. 
+    
+    *Syntax*
+
+    ```java
+    double val = 12.234;
+    ```
+
+
