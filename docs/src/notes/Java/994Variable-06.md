@@ -30,6 +30,13 @@ public class Variables{
 **Output** - \
 `10`
 
+## Rules for Declaring Variable
+- **Valid Characters :** Variable names can include letters (A-Z, a-z), digits (0-9), dollar sign ($), and underscore (_).
+- **Must Start with a Letter or $ or _ :** The first character of a variable name must be a letter, dollar sign \$, or underscore (_). 
+- **Cannot be a Reserved Keyword :** Variable names cannot be a reserved Java keyword.
+- **Case-Sensitivity :** Java is case-sensitive, so variable names differing only in case are considered different.
+- **No Spaces or Special Characters :** Variable names cannot contain spaces or special characters like !, @, #, %, etc. 
+
 ## Types of Variable
 There are three types of variable present in java
 - Local Variable
