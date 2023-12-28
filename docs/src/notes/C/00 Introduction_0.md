@@ -1,17 +1,17 @@
 ---
 title: Introduction to C Programming 0
 topic: C
-preview: 
+preview: Welcome to C Programming...
 img: DSA/c.png
 alt: C Transaparent Image
 linkImg: DSA/c.png
 linkImgAlt: C Transparent Image
 ---
 
-## Blog 0: Welcome to C Programming.
+## Welcome to C Programming.
 
 **Topic:**
-Introduction to C Programming 0
+Introduction to C Programming
 
 **Prerequisite:**
 Basic Mathematics and basic logical reasoning. No prior programming knowledge is required.
@@ -30,7 +30,7 @@ C is a programming language created by Dennis Ritchie in 1972. And from the star
 C will never be in "Top 10 languages to learn in 202x" or "Top 5 languages to get paid most" because of the faulty oversimplifications of news channels. C should be the first step towards the world of programming. Here are few reasons-
 
 - C is a low level language. It interacts with memory direectly. It doesn't create a virtual environment to run. So it is very fast. For this reason many framework and other thingd mentioned previously are written in C. Even many languages are written in C. So in almost every branch of C, your knowledge of C will be useful.
-- Don't trust the hype. Other languages come and go, but C will be always there. Memes will always portray C as the old, complex and unnecessary old man. But remove C from the world and world will come to end. One you learn C, it will be your faithful flashlight everywhere. Almost in every branch you dive into, knowledge of C will be useful.
+- Don't trust the hype. Other languages come and go, but C will be always there. Memes will always portray C as the old, complex and unnecessary old man. But remove C from the world and world will come to end. Once you learn C, it will be your faithful flashlight everywhere. Almost in every branch you dive into, knowledge of C will be useful.
 - Once you understand C, and basic OOPs(Knowledge of C will also help here), you can easily learn other language easily. But this is not true for other langauges. You can easily find these stories easily on the internet. C shows you what a program is actually doing instead of covering the complexity of abstraction. Sure when compared to **Python** code, C seems unnecessarily complex. But learning other langauge after python will not be a good ride, many things won't make sense. On the other hand, after C, all the other langauge will seem as C in different dress(with OOPs of course, but C is still the main component).
 
 ### How we execute a C program
