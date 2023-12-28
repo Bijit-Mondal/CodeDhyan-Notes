@@ -49,8 +49,21 @@ The easiest way to run C progras is to get an IDE(Integrated Development Environ
    
 #### Now to creating a program and running:
 1. Open your editor, create a new file and save it with extension **.c**. Write your program(We'll get to it from next blog)
-2. Open terminal, go to the directory where you have saved your code. write _gcc FileName.c_, if the name is hello.c, it will be _gcc hello.c_. This will create a executable file called _a.exe_(Windiws) or _a.out_(Linux) from your C code.
-3. This is an extra wisdom which is not really necessary but maybe useful. You can skip this part if you are getting bored. You see the output file name is _a_ with extension, you can change it with this extra step. If you write _gcc -o OutputFileNameWithExtension CProgramName.c_, it will generate executable with your suggested name.
+2. Open terminal, go to the directory where you have saved your code. write 
+    ```sh 
+    gcc FileName.c
+    ```
+    if the name is hello.c, it will be 
+    ```sh
+    gcc hello.c
+    ```
+    This will create a executable file called _a.exe_(Windiws) or _a.out_(Linux) from your C code.
+
+3. This is an extra wisdom which is not really necessary but maybe useful. You can skip this part if you are getting bored. You see the output file name is _a_ with extension, you can change it with this extra step. If you write 
+    ```sh
+    gcc -o OutputFileNameWithExtension CProgramName.c
+    ```
+    it will generate executable with your suggested name.
 4. Now that you have got the executable, run it with _./a.out_ for linux and _a.exe_ for windows. Here **a** is your executable file name.
 
-Now that you have done your preparations, we will dive into actually larning to write a C Program
+Now that you have done your preparations, we will dive into actually learning to write a C Program
