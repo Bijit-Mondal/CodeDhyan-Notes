@@ -15,7 +15,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['link', { rel: 'icon', href:'/images/logo.png' }],
+    ['link', { rel: 'icon', href:'/images/codedhyan-logo.png' }],
     ['meta', { name: 'theme-color', content: '#8b70cd' }],
     ['meta', { name: 'author', content: 'Bijit Mondal' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -29,7 +29,7 @@ module.exports = {
    */
   themeConfig: {
     repo: 'https://github.com/Bijit-Mondal/CodeDhyan-Notes',
-    logo: 'https://v1.vuepress.vuejs.org/hero.png',
+    logo: '/images/codedhyan-logo.png',
     editLinks: false,
     docsDir: '',
     editLinkText: '',

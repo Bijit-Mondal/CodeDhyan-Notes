@@ -1,7 +1,7 @@
 ---
 home: true
 footer: false
-heroImage: "https://v1.vuepress.vuejs.org/hero.png"
+heroImage: "/images/codedhyan-logo.png"
 tagline: ""
 actionText: Dive In →
 actionLink: /topics/
