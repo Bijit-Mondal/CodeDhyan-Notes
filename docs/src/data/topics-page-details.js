@@ -10,7 +10,7 @@ module.exports = {
       {
         title: 'C',
         summary:
-          "You'll find detailed DSA solutions here including code, notes, links, diagrams, animations, & anything else that may be helpful!",
+          "This blog will guide you to learn C Programming from zero",
         logo: 'DSA/c.png',
         alt: 'LeetCode Topic Logo'
       }
