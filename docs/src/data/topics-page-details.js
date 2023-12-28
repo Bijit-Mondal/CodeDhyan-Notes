@@ -1,18 +1,18 @@
 module.exports = {
     topicsPageDetails: [
       {
-        title: 'Java',
-        summary:
-          "You'll find detailed DSA solutions here including code, notes, links, diagrams, animations, & anything else that may be helpful!",
-        logo: 'DSA/java.png',
-        alt: 'LeetCode Topic Logo'
-      },
-      {
         title: 'C',
         summary:
-          "You'll find detailed DSA solutions here including code, notes, links, diagrams, animations, & anything else that may be helpful!",
+          "This blog will guide you to learn C Programming from zero",
         logo: 'DSA/c.png',
-        alt: 'LeetCode Topic Logo'
+        alt: 'C Topic Logo'
+      },
+      {
+        title: 'Java',
+        summary:
+          "Learn core Java from zero...",
+        logo: 'DSA/java.png',
+        alt: 'Java Topic Logo'
       }
     ]
   }
