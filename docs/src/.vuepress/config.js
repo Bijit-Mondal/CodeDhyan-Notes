@@ -47,14 +47,15 @@ module.exports = {
             text: 'By Topic',
             items: [
               { text: 'C', link: '/topics/C/' },
-              { text: 'Java', link: '/topics/Java/' }
+              { text: 'Java', link: '/topics/Java/' },
+              { text: 'Machine Learning', link: '/topics/ML/' }
             ]
           }
         ]
       },
       {
         text: 'Resources',
-        link: '/resources/'
+        link: '#'
       }
     ]
   },
