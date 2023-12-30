@@ -1,7 +1,7 @@
 ---
-title: Welcome to Machine Learning tutorial
+title: Welcome to Machine Learning Notes
 topic: Machine Learning
-preview:
+preview: Machine Learning notes
 img: ML/Ml_logo.png
 alt: ML Logo image
 linkImg: ML/ML_logo.png
