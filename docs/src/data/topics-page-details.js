@@ -8,6 +8,12 @@ module.exports = {
         alt: 'C Topic Logo'
       },
       {
+        title: 'CP',
+        summary: "This blog will guide you about competitive programming",
+        logo: 'DSA/cp_img.png',
+        alt: 'CP Topic Logo'
+      },
+      {
         title: 'Java',
         summary:
           "Learn core Java from zero...",
