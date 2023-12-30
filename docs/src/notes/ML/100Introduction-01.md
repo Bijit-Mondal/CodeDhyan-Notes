@@ -1,8 +1,8 @@
 ---
-title: Welcome to Machine Learning Notes
-topic: Machine Learning
+title: 01 - Welcome to Machine Learning Notes
+topic: ML
 preview: Machine Learning notes
-img: ML/Ml_logo.png
+img: ML/ML_logo.png
 alt: ML Logo image
 linkImg: ML/ML_logo.png
 linkImgAlt: ML logo image
@@ -11,7 +11,7 @@ linkImgAlt: ML logo image
 # INTRODUCTION
 
 Hi everyone. We will be discussing a very interesting topic here, with a very basic and beginner-friendly approach. I expect all the readers of this content to be aware of the recent developments in the field of Computer Science because it will help to understand the article.
-So, let’s begin with some buzzwords. ‘*Data Science’, ‘Artificial Intelligence’, ‘Machine Learning’, ‘Deep Learning’, ‘Computer Vision’, ‘Natural Language Processing*’… so many of them. I will try to explain each of them one by one. 
+So, let’s begin with some buzzwords. ‘*Data Science*’, ‘*Artificial Intelligence*’, ‘*Machine Learning*’, ‘*Deep Learning*’, ‘*Computer Vision*’, ‘*Natural Language Processing*’… so many of them. I will try to explain each of them one by one. 
 
 ##### *Artificial Intelligence* -   
 You can think of it as grandfather or great-grandfather in the family tree. He resides at the top, and all the other members are direct or indirect descendants of him. Artificial Intelligence is the study in which we practice to make our machines work for us. Now you might think that my machine already works for me, if I give it a task it will do it in the blink of an eye. You are right. But that’s not the machine entirely, that is doing it. There is a brain of a certain programmer who programmed the machine to do that job. AI tries to enable the machine to do the job automatically, without being pre-programmed. Now, AI is the grandfather because all the other buzzwords are descendants of this. You will understand more as we go forward.
