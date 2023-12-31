@@ -14,6 +14,12 @@ module.exports = {
         alt: 'CP Topic Logo'
       },
       {
+        title: 'DSA',
+        summary: "Start learning DSA...",
+        logo: 'DSA/LeetCode_logo_black.png',
+        alt: 'DSA Logo'
+      },
+      {
         title: 'Java',
         summary:
           "Learn core Java from zero...",

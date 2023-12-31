@@ -48,7 +48,9 @@ module.exports = {
             items: [
               { text: 'C', link: '/topics/C/' },
               { text: 'Java', link: '/topics/Java/' },
-              { text: 'Machine Learning', link: '/topics/ML/' }
+              { text: 'Machine Learning', link: '/topics/ML/' },
+              { text: 'Competitive Programming', link:'/topics/CP/'},
+              { text: 'DSA', link:'/topics/DSA/'}
             ]
           }
         ]
